@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*----HEADER----*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: #22233d;
+}
+
+.container {
+  width: 100%;
+  max-width: 1920px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.header-basket {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.header-logo {
+  font-size: 24px;
+  color: aliceblue;
+}
+
+.header-icon {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.header-balance {
+  display: flex;
+  gap: 10px;
+  font-size: 16px;
+  color: aliceblue;
+}
+
+/*----ITEM - LIST----*/
+.item-wrapper {
+  display: flex;
+  margin-top: 60px;
+  min-height: calc(100vh - 60px);
+  background: #323342;
+}
+
+.item-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 25px;
+}
+
+/*----ITEM---*/
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 25px;
+  background: #22233d;
+  max-width: 350px;
+  width: 100%;
+}
+
+.item-title {
+  font-size: 36px;
+  color: #fff;
+}
+
+.item-body {
+  font-size: 18px;
+  color: #fff;
+}
+
+.item-buy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.item-cost {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.item-current {
+  font-size: 20px;
+  color: #c5c4c4;
+}
+
+/*----BASKET----*/
+.basket-list {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  gap: 20px;
+  border: 2px solid #22233d;
+}
+
+.basket-description {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 0 0 50%;
+}
+
+.basket-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 15px;
+  border: 2px solid #22233d;
+  gap: 20px;
+}
+
+.basket-option {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 15px;
+  gap: 20px;
+  flex: 0 0 50%;
+}
+
+/*# sourceMappingURL=index.css.map */
