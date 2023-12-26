@@ -4,7 +4,7 @@ import {IconContext} from "react-icons";
 import MyButton from "./UI/button/MyButton";
 import {useTypedSelector} from "../hooks/useTypedSelector";
 import MyModal from "./UI/modal/MyModal";
-import BasketList from "../pages/basket/BasketList";
+import BasketList from "./basket/BasketList";
 
 
 const Header:FC = () => {

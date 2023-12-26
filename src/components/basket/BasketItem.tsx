@@ -1,21 +1,18 @@
 import React, {FC} from 'react';
-import {IBasket} from "../../types";
-import MyImage from "../../components/UI/image/MyImage";
-import MyButton from "../../components/UI/button/MyButton";
+
+import MyImage from "../UI/image/MyImage";
+import MyButton from "../UI/button/MyButton"
+
 import {useDispatch} from "react-redux";
 import {removeBasketReducerAction} from "../../store/reducers/basketReducer";
 
+import {basketItemProps} from "../../types";
 
-interface basketItemProps {
-    props?: IBasket
-}
 
 const BasketItem:FC<basketItemProps> = (props) => {
     const dispatch = useDispatch()
+    const removeItem = (item:any) => dispatch(removeBasketReducerAction(item.id))
 
-    const removeItem = (item:any) => {
-        dispatch(removeBasketReducerAction(item.id))
-    }
 
     return (
         <div className='basket-item'>

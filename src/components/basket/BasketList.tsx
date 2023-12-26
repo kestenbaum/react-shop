@@ -1,10 +1,10 @@
 import React, {FC} from 'react';
-import {useTypedSelector} from "../../hooks/useTypedSelector";
+
 import BasketItem from "./BasketItem";
+import {useTypedSelector} from "../../hooks/useTypedSelector";
 
 
 const BasketList:FC = () => {
-
     const state = useTypedSelector(item => item.basket.data)
 
     return (

@@ -1,13 +1,12 @@
 import React, {FC, useState} from 'react';
-import {IItem} from "../types";
+
+import {itemProps} from "../types";
+
 import MyImage from "./UI/image/MyImage";
 import MyButton from "./UI/button/MyButton";
+
 import {basketReducerAction} from "../store/reducers/basketReducer";
 import {useDispatch} from "react-redux";
-
-interface itemProps {
-    props: IItem
-}
 
 const Item:FC<itemProps> = ({props}) => {
 

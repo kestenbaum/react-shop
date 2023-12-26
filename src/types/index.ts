@@ -15,3 +15,11 @@ export interface IBasket {
     cost: string;
     current: number;
 }
+
+export interface basketItemProps {
+    props?: IBasket
+}
+
+export interface itemProps {
+    props: IItem
+}

@@ -3,7 +3,6 @@ import Item from "./Item";
 import {useTypedSelector} from "../hooks/useTypedSelector";
 
 const ItemList:FC = () => {
-
     const state = useTypedSelector(state => state.game.data)
 
     return (
