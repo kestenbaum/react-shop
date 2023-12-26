@@ -1,8 +1,8 @@
 import React, {FC, useState} from 'react';
-import {IItem} from "./types";
+import {IItem} from "../types";
 import MyImage from "./UI/image/MyImage";
 import MyButton from "./UI/button/MyButton";
-import {basketReducerAction} from "./store/reducers/basketReducer";
+import {basketReducerAction} from "../store/reducers/basketReducer";
 import {useDispatch} from "react-redux";
 
 interface itemProps {

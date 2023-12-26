@@ -1,7 +1,7 @@
 import React, {FC} from 'react';
 import {IBasket} from "../../types";
-import MyImage from "../../UI/image/MyImage";
-import MyButton from "../../UI/button/MyButton";
+import MyImage from "../../components/UI/image/MyImage";
+import MyButton from "../../components/UI/button/MyButton";
 import {useDispatch} from "react-redux";
 import {removeBasketReducerAction} from "../../store/reducers/basketReducer";
 

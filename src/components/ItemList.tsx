@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
 import Item from "./Item";
-import {useTypedSelector} from "./hooks/useTypedSelector";
+import {useTypedSelector} from "../hooks/useTypedSelector";
 
 const ItemList:FC = () => {
 

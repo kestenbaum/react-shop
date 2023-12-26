@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
 import Header from "./components/Header";
-import './components/style/index.css'
+import './style/index.css'
 import ItemList from "./components/ItemList";
 
 

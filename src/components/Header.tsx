@@ -2,9 +2,9 @@ import React, {FC, useMemo, useState} from 'react';
 import {BsFillBasketFill} from 'react-icons/bs'
 import {IconContext} from "react-icons";
 import MyButton from "./UI/button/MyButton";
-import {useTypedSelector} from "./hooks/useTypedSelector";
+import {useTypedSelector} from "../hooks/useTypedSelector";
 import MyModal from "./UI/modal/MyModal";
-import BasketList from "./pages/basket/BasketList";
+import BasketList from "../pages/basket/BasketList";
 
 
 const Header:FC = () => {
