@@ -6,31 +6,31 @@ import MyButton from "../UI/button/MyButton"
 import {useDispatch} from "react-redux";
 import {removeBasketReducerAction} from "../../store/reducers/basketReducer";
 
-import {basketItemProps} from "../../types";
+import {IBasket} from "../../types";
 
 
-const BasketItem:FC<basketItemProps> = (props) => {
+const BasketItem:FC<IBasket> = (props) => {
+    const {id,img, current, title, cost} = props
     const dispatch = useDispatch()
     const removeItem = (item:any) => dispatch(removeBasketReducerAction(item.id))
-
 
     return (
         <div className='basket-item'>
             <div className='basket-description'>
                 <div className='title-game'>
-                    {props.props?.title}
+                    {title}
                 </div>
                 <MyImage
                     style={{width: 50, height: 50}}
-                    src={props.props?.img}
+                    src={img}
                 />
             </div>
             <div className='basket-option'>
                  <div className='basket-price'>
-                   Стоимость: {props.props?.current}{props.props?.cost}
+                   Стоимость: {current}{cost}
                  </div>
                  <MyButton
-                    onClick={removeItem}
+                    onClick={() => removeItem(id)}
                  >Удалить</MyButton>
             </div>
 

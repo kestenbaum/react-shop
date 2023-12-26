@@ -15,8 +15,12 @@ const BasketList:FC = () => {
                 :
                 state.map(item =>
                     <BasketItem
-                        props={item}
                         key={item.id}
+                        id={item.id}
+                        img={item.img}
+                        title={item.title}
+                        cost={item.cost}
+                        current={item.current}
                     />
                 )
             }

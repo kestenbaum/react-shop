@@ -7,7 +7,6 @@ export interface IItem {
     current: number;
 }
 
-
 export interface IBasket {
     id: number;
     title: string;

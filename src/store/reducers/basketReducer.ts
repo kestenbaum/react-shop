@@ -18,7 +18,7 @@ export const basketReducer = (state = initialState, action:IAction) => {
         case "ADD_BASKET":
             return {...state, data: [...state.data, action.payload]}
         case "REMOVE_BASKET":
-            return {...state, data: state.data.filter(item => item.id !== action.payload)}
+            return {...state, data: state.data = state.data.filter(item => item.id !== action.payload)}
         default:
             return state
     }
